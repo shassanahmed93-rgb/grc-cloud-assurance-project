@@ -1,0 +1,9 @@
+id,control,result,evidence
+T-01,C-01,Fail,SYN-identity-review
+T-02,C-02,Pass,SYN-storage-snapshot
+T-03,C-03,Fail,SYN-release-sample
+T-04,C-04,Pass,SYN-recovery-tabletop
+T-05,C-05,Inconclusive,SYN-log-config-only
+T-06,C-06,Fail,SYN-vendor-review
+T-07,C-07,Fail,SYN-ai-ticket-sample
+T-08,C-08,Pass,SYN-incident-tabletop

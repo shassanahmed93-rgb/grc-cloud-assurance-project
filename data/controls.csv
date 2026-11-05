@@ -1,0 +1,9 @@
+id,objective,owner
+C-01,Disable terminated identities within 24 hours,People Lead
+C-02,Block public storage access and encrypt data,CTO
+C-03,Require independent release approval,Engineering Lead
+C-04,Demonstrate recovery objectives,CTO
+C-05,Retain and query security events,Security Lead
+C-06,Review current supplier assurance,Procurement Lead
+C-07,Restrict AI processing of customer data,Support Lead
+C-08,Exercise incident escalation,Security Lead

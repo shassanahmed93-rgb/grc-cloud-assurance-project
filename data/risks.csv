@@ -1,0 +1,9 @@
+id,title,owner,likelihood,impact,current_likelihood,current_impact,target_likelihood,target_impact,control
+R-01,Former employee retains access,People Lead,4,5,3,5,1,5,C-01
+R-02,Customer attachments exposed,CTO,4,5,1,5,1,5,C-02
+R-03,Unapproved production release,Engineering Lead,4,4,3,4,1,4,C-03
+R-04,Backup recovery fails,CTO,3,5,2,4,1,4,C-04
+R-05,Malicious activity goes undetected,Security Lead,4,4,3,4,1,4,C-05
+R-06,Support supplier data compromise,Procurement Lead,4,4,3,4,2,4,C-06
+R-07,Customer data sent to unapproved AI,Support Lead,4,4,3,4,1,4,C-07
+R-08,Incident escalation delayed,Security Lead,3,4,2,4,1,4,C-08
