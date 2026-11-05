@@ -1,0 +1,4 @@
+private-evidence/
+.env
+node_modules/
+*.log

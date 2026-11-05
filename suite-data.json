@@ -1,0 +1,1376 @@
+[
+  {
+    "slug": "vendor-risk",
+    "number": "01",
+    "accent": "#79e6c5",
+    "label": "THIRD-PARTY ASSURANCE",
+    "title": "Trust requires evidence.",
+    "name": "Third-Party Risk Assessment",
+    "subtitle": "A public-source Notion review for a fictional SaaS buyer. Thirty questions separate advertised capability from verified operation.",
+    "decision": "Hold sensitive-data onboarding",
+    "decisionText": "Critical assurance, contract and tenant-configuration questions remain unresolved. This is a decision for the proposed Northstar use case—not a finding that Notion is insecure.",
+    "recordLabel": "Assessment questions",
+    "records": [
+      {
+        "id": "V-01",
+        "group": "Governance",
+        "title": "Is an assurance report advertised?",
+        "status": "Supported",
+        "critical": false,
+        "evidence": [
+          "N4"
+        ],
+        "observation": "The public trust center lists SOC 2 Type II assurance. Its report contents were not reviewed.",
+        "next": "Request the report and confirm its scope, period and exceptions.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Public provider statement",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-02",
+        "group": "Governance",
+        "title": "Has the current assurance report been evaluated?",
+        "status": "Unknown",
+        "critical": true,
+        "evidence": [],
+        "observation": "No restricted report was obtained for this project.",
+        "next": "Record reviewer, period, exclusions and relevant complementary user controls.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-03",
+        "group": "Governance",
+        "title": "Are security responsibilities described publicly?",
+        "status": "Supported",
+        "critical": false,
+        "evidence": [
+          "N1"
+        ],
+        "observation": "A shared-responsibility model is linked publicly.",
+        "next": "Assign each customer responsibility to a Northstar owner.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Public provider statement",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-04",
+        "group": "Governance",
+        "title": "Are independent penetration tests described?",
+        "status": "Supported",
+        "critical": false,
+        "evidence": [
+          "N1"
+        ],
+        "observation": "The provider describes external testing. Results and remediation were not inspected.",
+        "next": "Obtain a permitted summary and review unresolved material issues.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Public provider statement",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-05",
+        "group": "Governance",
+        "title": "Does the contract include audit and escalation rights?",
+        "status": "Unknown",
+        "critical": true,
+        "evidence": [],
+        "observation": "No negotiated contract was supplied.",
+        "next": "Procurement and counsel must review the executed terms.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-06",
+        "group": "Identity",
+        "title": "Is federated SSO available?",
+        "status": "Supported",
+        "critical": false,
+        "evidence": [
+          "N2"
+        ],
+        "observation": "SSO is documented for eligible plans.",
+        "next": "Confirm purchased plan and test enforced authentication.",
+        "owner": "IT Lead",
+        "basis": "Public provider statement",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-07",
+        "group": "Identity",
+        "title": "Is SSO enforced in the proposed workspace?",
+        "status": "Unknown",
+        "critical": true,
+        "evidence": [],
+        "observation": "No workspace configuration or login test exists.",
+        "next": "Test a normal user and an exception path; review emergency access.",
+        "owner": "IT Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-08",
+        "group": "Identity",
+        "title": "Are guest identity exceptions understood?",
+        "status": "Partial",
+        "critical": true,
+        "evidence": [
+          "N2"
+        ],
+        "observation": "SSO documentation distinguishes guest login behavior. Northstar has not assessed guest usage.",
+        "next": "Inventory guests and define allowed content and authentication paths.",
+        "owner": "IT Lead",
+        "basis": "Public description; scope incomplete",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-09",
+        "group": "Identity",
+        "title": "Is automated provisioning described?",
+        "status": "Supported",
+        "critical": false,
+        "evidence": [
+          "N1"
+        ],
+        "observation": "SCIM is advertised among enterprise controls.",
+        "next": "Confirm plan eligibility, configured connector and a leaver test.",
+        "owner": "IT Lead",
+        "basis": "Public provider statement",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-10",
+        "group": "Identity",
+        "title": "Are administrators protected by verified MFA?",
+        "status": "Unknown",
+        "critical": true,
+        "evidence": [],
+        "observation": "No administrator enrollment or enforcement evidence was collected.",
+        "next": "Inspect IdP policy and run an approved authentication test.",
+        "owner": "IT Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-11",
+        "group": "Identity",
+        "title": "Is quarterly access recertification operating?",
+        "status": "Unknown",
+        "critical": false,
+        "evidence": [],
+        "observation": "Northstar supplied no membership review.",
+        "next": "Review full member/guest population and record removals.",
+        "owner": "IT Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-12",
+        "group": "Data protection",
+        "title": "Is transport encryption described?",
+        "status": "Supported",
+        "critical": false,
+        "evidence": [
+          "N1"
+        ],
+        "observation": "The provider publishes transport encryption information.",
+        "next": "Confirm supported client paths and approved integration behavior.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Public provider statement",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-13",
+        "group": "Data protection",
+        "title": "Is encryption at rest described?",
+        "status": "Supported",
+        "critical": false,
+        "evidence": [
+          "N1"
+        ],
+        "observation": "The provider describes encryption at rest.",
+        "next": "Review scope and key responsibilities against the data classification.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Public provider statement",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-14",
+        "group": "Data protection",
+        "title": "Are customer-managed keys suitable for this use case?",
+        "status": "Partial",
+        "critical": false,
+        "evidence": [
+          "N1"
+        ],
+        "observation": "Key-management capability is advertised; applicability has not been evaluated.",
+        "next": "Confirm eligible plan, supported content and operational recovery model.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Public description; scope incomplete",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-15",
+        "group": "Data protection",
+        "title": "Is public sharing disabled for sensitive pages?",
+        "status": "Unknown",
+        "critical": true,
+        "evidence": [],
+        "observation": "No tenant settings or page-sharing inventory supplied.",
+        "next": "Review sharing policy and test a restricted sample page.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-16",
+        "group": "Data protection",
+        "title": "Has export and exit recovery been tested?",
+        "status": "Unknown",
+        "critical": false,
+        "evidence": [],
+        "observation": "No Northstar export or migration exercise supplied.",
+        "next": "Export synthetic content and verify formats, attachments and permissions.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-17",
+        "group": "Monitoring",
+        "title": "Is security audit logging available?",
+        "status": "Supported",
+        "critical": false,
+        "evidence": [
+          "N3"
+        ],
+        "observation": "Audit logs are documented for Enterprise owners.",
+        "next": "Confirm eligibility and the selected workspace event scope.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Public provider statement",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-18",
+        "group": "Monitoring",
+        "title": "Is audit-log retention documented?",
+        "status": "Supported",
+        "critical": false,
+        "evidence": [
+          "N3"
+        ],
+        "observation": "Documentation states history is retained for up to 365 days.",
+        "next": "Map required retention to an approved collection and archive process.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Public provider statement",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-19",
+        "group": "Monitoring",
+        "title": "Can audit events be exported?",
+        "status": "Supported",
+        "critical": false,
+        "evidence": [
+          "N3"
+        ],
+        "observation": "CSV export is described.",
+        "next": "Exercise an export using a synthetic event and validate completeness.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Public provider statement",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-20",
+        "group": "Monitoring",
+        "title": "Has alert delivery been demonstrated?",
+        "status": "Unknown",
+        "critical": true,
+        "evidence": [],
+        "observation": "No monitoring rule or alert delivery test was provided.",
+        "next": "Generate an approved synthetic event and record detection and receipt.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-21",
+        "group": "Privacy",
+        "title": "Are privacy and processing terms discoverable?",
+        "status": "Supported",
+        "critical": false,
+        "evidence": [
+          "N4"
+        ],
+        "observation": "The trust center links privacy and processing documents. No legal suitability conclusion is made.",
+        "next": "Counsel must review the applicable executed agreement.",
+        "owner": "Privacy Lead",
+        "basis": "Public provider statement",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-22",
+        "group": "Privacy",
+        "title": "Is a subprocessor list discoverable?",
+        "status": "Supported",
+        "critical": false,
+        "evidence": [
+          "N4"
+        ],
+        "observation": "A subprocessor list is linked publicly.",
+        "next": "Evaluate the relevant processing paths and change-notice mechanism.",
+        "owner": "Privacy Lead",
+        "basis": "Public provider statement",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-23",
+        "group": "Privacy",
+        "title": "Is the required processing location contractually confirmed?",
+        "status": "Unknown",
+        "critical": true,
+        "evidence": [],
+        "observation": "No Northstar residency commitment was supplied.",
+        "next": "Validate scope, exceptions and contractual requirements for the intended content.",
+        "owner": "Privacy Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-24",
+        "group": "Privacy",
+        "title": "Is deletion completion evidenced for the intended data?",
+        "status": "Unknown",
+        "critical": true,
+        "evidence": [],
+        "observation": "No request, retention configuration or deletion confirmation supplied.",
+        "next": "Test deletion with synthetic content and review backup retention exceptions.",
+        "owner": "Privacy Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-25",
+        "group": "Privacy",
+        "title": "Are AI processing terms and configuration approved?",
+        "status": "Unknown",
+        "critical": true,
+        "evidence": [],
+        "observation": "No approved AI data-flow assessment or tenant settings supplied.",
+        "next": "Keep AI use with customer data out of scope pending separate review.",
+        "owner": "Privacy Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-26",
+        "group": "Resilience",
+        "title": "Are customer-specific RTO/RPO commitments established?",
+        "status": "Unknown",
+        "critical": true,
+        "evidence": [],
+        "observation": "No executed recovery commitment was evaluated.",
+        "next": "Agree recovery needs with the business; obtain service-specific commitments.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-27",
+        "group": "Resilience",
+        "title": "Is a customer recovery exercise completed?",
+        "status": "Unknown",
+        "critical": false,
+        "evidence": [],
+        "observation": "No restore or exit exercise was performed.",
+        "next": "Run an approved tabletop followed by technical validation where feasible.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-28",
+        "group": "Incident response",
+        "title": "Is incident response capability described?",
+        "status": "Supported",
+        "critical": false,
+        "evidence": [
+          "N1"
+        ],
+        "observation": "The provider describes an incident-response function.",
+        "next": "Review escalation paths for Northstar without assuming contractual notice timing.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Public provider statement",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-29",
+        "group": "Incident response",
+        "title": "Is breach notification timing contractually agreed?",
+        "status": "Unknown",
+        "critical": true,
+        "evidence": [],
+        "observation": "No executed notification clause was reviewed.",
+        "next": "Counsel and the business owner must approve duties and escalation contacts.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      },
+      {
+        "id": "V-30",
+        "group": "Incident response",
+        "title": "Has the supplier contact route been exercised?",
+        "status": "Unknown",
+        "critical": false,
+        "evidence": [],
+        "observation": "No joint contact drill took place.",
+        "next": "Conduct a non-production contact-validation exercise with authorization.",
+        "owner": "Vendor Risk Lead",
+        "basis": "Not obtained",
+        "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+      }
+    ],
+    "sourceIds": [
+      "N1",
+      "N2",
+      "N3",
+      "N4"
+    ],
+    "steps": [
+      "Scope the relationship",
+      "Review public claims",
+      "Challenge unknowns",
+      "Decide with conditions"
+    ],
+    "intro": "Northstar wants a workspace for internal runbooks and customer-support notes. Internal-only synthetic content is suitable for a controlled pilot; customer data remains outside the proposed approval until critical evidence is reviewed.",
+    "method": [
+      [
+        "Scope & tiering",
+        "Fictional 80-person SaaS buyer; proposed customer-support content, 80 workforce users and potential external guests. Sensitivity 4 × dependency 3 = 12/25 inherent exposure, using a project-specific ordinal scale."
+      ],
+      [
+        "Published support, not compliance",
+        "Supported = a public source addresses the capability question. Partial = scope, plan or exceptions remain unclear. Unknown = needed evidence was not obtained. No = evidence explicitly contradicts the requirement; none are asserted here."
+      ],
+      [
+        "Scoring",
+        "Evidence coverage = (Supported + Partial + No) / 30. Published-support score = (2 × Supported + Partial) / (2 × answered). Unknown is excluded from the support score and shown separately; it is never treated as a pass or as vendor failure."
+      ],
+      [
+        "Decision gate",
+        "Any critical Unknown, Partial or No blocks sensitive-data approval regardless of score. Approval also requires all gate evidence reviewed, a named owner and an executed agreement. Public information alone cannot satisfy the gate."
+      ],
+      [
+        "Review & renewal",
+        "Assessment cutoff 5 November 2026. Refresh on material feature, subprocessor, contract, use-case or data-classification change; proposed annual renewal. No vendor questionnaire was actually sent."
+      ]
+    ],
+    "report": [
+      [
+        "Executive conclusion",
+        "Defer customer-data onboarding. Permit only a proposed internal synthetic-content pilot after business-owner review; this is an analyst recommendation with no actual approval."
+      ],
+      [
+        "Observed strengths",
+        "Public documentation addresses several identity, encryption, logging and assurance capabilities. Capability statements are not test results. Review the linked question records rather than interpreting a high numeric support score as low risk."
+      ],
+      [
+        "Conditions before approval",
+        "Obtain relevant assurance report and review exceptions; agree contractual duties; test SSO/MFA, guest and sharing configuration; establish processing locations, deletion and AI settings; validate notification and recovery needs."
+      ],
+      [
+        "Residual risk",
+        "Undetermined pending evidence. Do not derive residual risk by subtracting a questionnaire percentage from inherent risk. The open critical questions drive the hold recommendation."
+      ],
+      [
+        "Decision ownership",
+        "Procurement coordinates collection. IT tests configuration. Privacy/counsel review contractual suitability. The business owner accepts the documented risk; the portfolio author does not approve on their behalf."
+      ]
+    ],
+    "date": "2026-11-05",
+    "author": "Hassan Ahmed",
+    "sources": [
+      {
+        "id": "N1",
+        "title": "Notion — Security practices",
+        "url": "https://www.notion.com/security",
+        "note": "Provider-published capabilities; no independent operating evidence reviewed.",
+        "reviewed": "2026-11-05"
+      },
+      {
+        "id": "N2",
+        "title": "Notion — SAML SSO",
+        "url": "https://www.notion.com/help/saml-sso-configuration",
+        "note": "Business/Enterprise feature; workspace configuration and guest access require separate review.",
+        "reviewed": "2026-11-05"
+      },
+      {
+        "id": "N3",
+        "title": "Notion — Audit log",
+        "url": "https://www.notion.com/help/audit-log",
+        "note": "Enterprise feature; availability is not proof of tenant configuration.",
+        "reviewed": "2026-11-05"
+      },
+      {
+        "id": "N4",
+        "title": "Notion — Trust Center",
+        "url": "https://trust.notion.com/",
+        "note": "Public index only. Restricted assurance reports were not obtained.",
+        "reviewed": "2026-11-05"
+      }
+    ],
+    "github": "https://github.com/shassanahmed93-rgb/grc-cloud-assurance-project/tree/main/projects/vendor-risk"
+  },
+  {
+    "slug": "aws-soc2",
+    "number": "02",
+    "accent": "#8ec5ff",
+    "label": "CLOUD CONTROL ASSURANCE",
+    "title": "From configuration to assurance.",
+    "name": "AWS–SOC 2 Evidence Mapping",
+    "subtitle": "Twelve selected criterion mappings, collection procedures and transparent evidence gaps for a fictional cloud service.",
+    "decision": "Evidence collection pending",
+    "decisionText": "Every live-evidence status remains Not collected. Synthetic examples demonstrate review technique; they establish neither current AWS security nor SOC 2 readiness.",
+    "recordLabel": "Control workpapers",
+    "records": [
+      {
+        "id": "C-01",
+        "group": "Identity",
+        "title": "Federated workforce identity",
+        "status": "Not collected",
+        "criterion": "CC6.1",
+        "fixture": "Identity policy requires temporary sessions.",
+        "test": "Inspect IdP enforcement and AWS assignment exports; test allowed and denied logins.",
+        "evidence": [
+          "W1",
+          "A2"
+        ],
+        "observation": "A written policy cannot establish enforcement or complete population coverage.",
+        "next": "Collect signed-off identity inventory and time-stamped configuration.",
+        "owner": "Cloud Platform Lead",
+        "basis": "Collection plan + synthetic example only"
+      },
+      {
+        "id": "C-02",
+        "group": "Identity",
+        "title": "Joiner and leaver lifecycle",
+        "status": "Not collected",
+        "criterion": "CC6.2",
+        "fixture": "One of five synthetic leavers exceeded 24 hours.",
+        "test": "Reconcile the complete HR leaver population with disablement and token revocation records.",
+        "evidence": [
+          "W1",
+          "A2"
+        ],
+        "observation": "HR completeness and session lifetime are unverified.",
+        "next": "Reconcile all leavers and investigate each timing exception.",
+        "owner": "Cloud Platform Lead",
+        "basis": "Collection plan + synthetic example only"
+      },
+      {
+        "id": "C-03",
+        "group": "Identity",
+        "title": "Privileged role review",
+        "status": "Not collected",
+        "criterion": "CC6.3",
+        "fixture": "Two privileged roles have documented owners.",
+        "test": "Compare role policies, membership and business approvals; examine overbroad privileges.",
+        "evidence": [
+          "W1",
+          "A2"
+        ],
+        "observation": "Role existence is not proof that effective permission is appropriate.",
+        "next": "Inspect resource policies, boundaries and approved entitlements together.",
+        "owner": "Cloud Platform Lead",
+        "basis": "Collection plan + synthetic example only"
+      },
+      {
+        "id": "C-04",
+        "group": "Perimeter",
+        "title": "Network and storage exposure",
+        "status": "Not collected",
+        "criterion": "CC6.6",
+        "fixture": "Account public-access flags are enabled in a synthetic snapshot.",
+        "test": "Inspect effective account/bucket/access-point policy plus security-group ingress and approved exposure.",
+        "evidence": [
+          "W2",
+          "A2"
+        ],
+        "observation": "One snapshot cannot prove historical protection or absence of unintended private access.",
+        "next": "Collect effective policy and scoped negative-access test results.",
+        "owner": "Cloud Platform Lead",
+        "basis": "Collection plan + synthetic example only"
+      },
+      {
+        "id": "C-05",
+        "group": "Data protection",
+        "title": "Protected data transmission",
+        "status": "Not collected",
+        "criterion": "CC6.7",
+        "fixture": "TLS is required by an example application policy.",
+        "test": "Review listener and client settings; test approved endpoints without sending sensitive data.",
+        "evidence": [
+          "A2"
+        ],
+        "observation": "Encryption configuration alone does not address every data transfer path.",
+        "next": "Inventory API, database and third-party transfer paths.",
+        "owner": "Cloud Platform Lead",
+        "basis": "Collection plan + synthetic example only"
+      },
+      {
+        "id": "C-06",
+        "group": "Monitoring",
+        "title": "Configuration and vulnerability review",
+        "status": "Not collected",
+        "criterion": "CC7.1",
+        "fixture": "Example configuration gap: an unowned security-group exception.",
+        "test": "Compare a time-stamped inventory to the baseline and review vulnerability triage records.",
+        "evidence": [
+          "A2"
+        ],
+        "observation": "No actual scan or AWS Config results were collected.",
+        "next": "Collect scoped findings and approved exception decisions.",
+        "owner": "Cloud Platform Lead",
+        "basis": "Collection plan + synthetic example only"
+      },
+      {
+        "id": "C-07",
+        "group": "Monitoring",
+        "title": "Security event monitoring",
+        "status": "Not collected",
+        "criterion": "CC7.2",
+        "fixture": "Trail is configured; alert receipt evidence is absent.",
+        "test": "Review trail scope/status/selectors and a known event from creation through delivery to triage.",
+        "evidence": [
+          "W3",
+          "A2"
+        ],
+        "observation": "Enabled integrity validation is not the same as executing validation; management events do not cover all data events.",
+        "next": "Collect event selectors, a delivery sample and a timed detection test.",
+        "owner": "Cloud Platform Lead",
+        "basis": "Collection plan + synthetic example only"
+      },
+      {
+        "id": "C-08",
+        "group": "Incident handling",
+        "title": "Security-event evaluation",
+        "status": "Not collected",
+        "criterion": "CC7.3",
+        "fixture": "An example event is triaged with impact marked uncertain.",
+        "test": "Inspect event classification, impacted assets, decision owner and escalation rationale.",
+        "evidence": [
+          "A2",
+          "I1"
+        ],
+        "observation": "A ticket template does not establish consistent triage operation.",
+        "next": "Sample real permitted tickets for the defined review period.",
+        "owner": "Cloud Platform Lead",
+        "basis": "Collection plan + synthetic example only"
+      },
+      {
+        "id": "C-09",
+        "group": "Incident handling",
+        "title": "Coordinated incident response",
+        "status": "Not collected",
+        "criterion": "CC7.4",
+        "fixture": "Tabletop decision log assigns an incident commander.",
+        "test": "Review plan roles and a completed exercise with containment and communication decisions.",
+        "evidence": [
+          "A2",
+          "I1"
+        ],
+        "observation": "A tabletop cannot prove technical containment in production.",
+        "next": "Conduct an authorized exercise and track improvement actions.",
+        "owner": "Cloud Platform Lead",
+        "basis": "Collection plan + synthetic example only"
+      },
+      {
+        "id": "C-10",
+        "group": "Change management",
+        "title": "Production change authorization",
+        "status": "Not collected",
+        "criterion": "CC8.1",
+        "fixture": "One of three synthetic releases lacks independent approval.",
+        "test": "Reconcile deployment population with approvals, test results, immutable artifacts and emergency reviews.",
+        "evidence": [
+          "A2"
+        ],
+        "observation": "A CI success badge does not demonstrate authorization or full population completeness.",
+        "next": "Collect approval rules and complete deployment samples.",
+        "owner": "Cloud Platform Lead",
+        "basis": "Collection plan + synthetic example only"
+      },
+      {
+        "id": "C-11",
+        "group": "Resilience",
+        "title": "Business disruption mitigation",
+        "status": "Not collected",
+        "criterion": "CC9.1",
+        "fixture": "A paper restore scenario meets proposed objectives.",
+        "test": "Review recovery dependencies and witnessed restore results against business-approved RTO/RPO.",
+        "evidence": [
+          "W4",
+          "A2"
+        ],
+        "observation": "No restore was executed; service recovery must include application integrity checks.",
+        "next": "Obtain an approved recovery test and record actual timings.",
+        "owner": "Cloud Platform Lead",
+        "basis": "Collection plan + synthetic example only"
+      },
+      {
+        "id": "C-12",
+        "group": "Governance",
+        "title": "Supplier-risk governance",
+        "status": "Not collected",
+        "criterion": "CC9.2",
+        "fixture": "A supplier assurance report is not yet reviewed.",
+        "test": "Inspect assessment, contract, relevant assurance exceptions and approval decision.",
+        "evidence": [
+          "A2"
+        ],
+        "observation": "Provider certification does not cover Northstar tenant operation.",
+        "next": "Complete the linked vendor review and resolve critical unknowns.",
+        "owner": "Security Lead",
+        "basis": "Collection plan + synthetic example only"
+      }
+    ],
+    "sourceIds": [
+      "A1",
+      "A2",
+      "W1",
+      "W2",
+      "W3",
+      "W4",
+      "I1"
+    ],
+    "steps": [
+      "Define system boundary",
+      "Map selected criteria",
+      "Specify evidence",
+      "Test before concluding"
+    ],
+    "intro": "The reference design is a cloud API with federated administration, containers, private data storage and a deployment pipeline. It draws on the architecture style of the Journal API, but this assessment does not inherit its historical verification as new evidence.",
+    "method": [
+      [
+        "Engagement boundary",
+        "Selected security Common Criteria only; not all CC1–CC9, not a full SOC 2 scope and not Type I or Type II assurance. Criterion themes are original short paraphrases; consult the applicable AICPA edition before real use."
+      ],
+      [
+        "Provider versus customer",
+        "AWS operates underlying services. Northstar remains responsible for its identities, workload permissions, data classification, application authorization, configurations and evidence review. A provider report does not test these customer controls."
+      ],
+      [
+        "Three evidence levels",
+        "Design = what the policy and configuration intend. Implementation = what is actually configured at a specific time. Operation = whether the control worked for a defined population and period. Keep the three separate."
+      ],
+      [
+        "Collection protocol",
+        "Record resource scope, command, collector, UTC collection time, review period, SHA-256 hash and redaction history. Preserve original output privately. Denied or empty output is an evidence gap, not a passing result."
+      ],
+      [
+        "Safe execution",
+        "No cloud commands were executed by this project. Optional collection examples are read-only, scoped and explicitly invoked by the user. They do not create resources or run restore jobs. Review outputs for account identifiers and sensitive configuration before publication."
+      ]
+    ],
+    "report": [
+      [
+        "Executive conclusion",
+        "The package is an evidence-ready assessment design. Twelve live evidence requests are open. There is no support for a live operating-effectiveness or compliance conclusion."
+      ],
+      [
+        "Priority evidence",
+        "Collect complete identity and deployment populations, effective storage permissions, actual log delivery and an independently witnessed restore. Single configuration screenshots are insufficient for period-based claims."
+      ],
+      [
+        "Decision rule",
+        "Do not mark a criterion satisfied because one AWS setting is enabled. Review the complete control objective, relevant application processes, exceptions and period evidence."
+      ],
+      [
+        "Next milestone",
+        "Use an authorized sandbox to collect sanitized evidence for C-01, C-04 and C-07 first. Record reviewer conclusions and limitations before expanding scope."
+      ]
+    ],
+    "date": "2026-11-05",
+    "author": "Hassan Ahmed",
+    "sources": [
+      {
+        "id": "A1",
+        "title": "AICPA — 2017 TSC with revised points of focus (2022)",
+        "url": "https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022",
+        "note": "Reference edition for this educational mapping; no complete criteria text reproduced.",
+        "reviewed": "2026-11-05"
+      },
+      {
+        "id": "A2",
+        "title": "AICPA — 2017 TSC, March 2020 edition",
+        "url": "https://assets.ctfassets.net/rb9cdnjh59cm/72xv4p67HVXKp6CjWmjkPk/1cdbfa19f6307e2720396b66a6194dc9/trust-services-criteria-updated-copyright.pdf",
+        "note": "Public AICPA-authored document used to check selected criterion identifiers. Review against the engagement-specific edition before reuse.",
+        "reviewed": "2026-11-05"
+      },
+      {
+        "id": "W1",
+        "title": "AWS — IAM security practices",
+        "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+        "note": "Implementation guidance; not evidence that Northstar implemented a control.",
+        "reviewed": "2026-11-05"
+      },
+      {
+        "id": "W2",
+        "title": "AWS — S3 Block Public Access",
+        "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html",
+        "note": "Evaluate effective organization/account/bucket/access-point settings together.",
+        "reviewed": "2026-11-05"
+      },
+      {
+        "id": "W3",
+        "title": "AWS — CloudTrail security practices",
+        "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/best-practices-security.html",
+        "note": "Trail configuration, event selection and event delivery are distinct evidence questions.",
+        "reviewed": "2026-11-05"
+      },
+      {
+        "id": "W4",
+        "title": "AWS — Backup restore testing",
+        "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/restore-testing.html",
+        "note": "Restore testing can create billable resources. This project does not run restores.",
+        "reviewed": "2026-11-05"
+      },
+      {
+        "id": "I1",
+        "title": "NIST SP 800-61 Rev. 3",
+        "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "note": "April 2025 guidance. Exercise stages below are an original facilitation sequence.",
+        "reviewed": "2026-11-05"
+      }
+    ],
+    "github": "https://github.com/shassanahmed93-rgb/grc-cloud-assurance-project/tree/main/projects/aws-soc2"
+  },
+  {
+    "slug": "incident-tabletop",
+    "number": "03",
+    "accent": "#ffc58e",
+    "label": "INCIDENT RESPONSE EXERCISE",
+    "title": "Clarity under pressure.",
+    "name": "Cloud Credential Incident Tabletop",
+    "subtitle": "Eight timed injects, explicit decisions and a structured after-action review. A scripted rehearsal—not an incident response claim.",
+    "decision": "Three improvement actions open",
+    "decisionText": "The authored walkthrough exposes log-coverage, session-revocation and recovery-approval gaps. Sample decisions show expected reasoning; they are not measured team performance.",
+    "recordLabel": "Scenario injects",
+    "records": [
+      {
+        "id": "I-01",
+        "minute": 0,
+        "title": "Unexpected cloud sign-in",
+        "group": "Detect",
+        "status": "Scripted",
+        "observation": "At 09:00 UTC a simulated alert shows an unfamiliar region and a developer session.",
+        "test": "Who validates the event, and what evidence is needed before calling it an incident?",
+        "decision": "On-call analyst compares identity, location context and approved work; preserve the original alert.",
+        "evidence": [
+          "IR-E01"
+        ],
+        "next": "Add regional work context to the triage checklist.",
+        "owner": "SOC Analyst",
+        "basis": "Authored simulation; no real incident or participants"
+      },
+      {
+        "id": "I-02",
+        "minute": 10,
+        "title": "Credential exposure confirmed",
+        "group": "Analyze",
+        "status": "Scripted",
+        "observation": "A synthetic repository review finds an exposed credential reference. No actual secret is included.",
+        "test": "Who becomes incident commander, and which facts are established?",
+        "decision": "Security Lead declares a simulated high-severity incident and assigns cloud and communications leads.",
+        "evidence": [
+          "IR-E02"
+        ],
+        "next": "Record the decision basis and unresolved impact questions.",
+        "owner": "Security Lead",
+        "basis": "Authored simulation; no real incident or participants"
+      },
+      {
+        "id": "I-03",
+        "minute": 20,
+        "title": "Containment versus availability",
+        "group": "Contain",
+        "status": "Scripted",
+        "observation": "The credential is linked to a job that supports an important customer workflow.",
+        "test": "How will the team revoke access while keeping a safe service path?",
+        "decision": "Cloud lead proposes revocation and a controlled replacement path; incident commander approves sequencing.",
+        "evidence": [
+          "IR-E03"
+        ],
+        "next": "Document the emergency-access path and authorization for disruptive actions.",
+        "owner": "Cloud Lead",
+        "basis": "Authored simulation; no real incident or participants"
+      },
+      {
+        "id": "I-04",
+        "minute": 35,
+        "title": "Possible object access",
+        "group": "Investigate",
+        "status": "Scripted",
+        "observation": "Management logs exist, but the sample contains no object-level reads for the affected period.",
+        "test": "Can the team conclude that customer objects were not accessed?",
+        "decision": "No. Record an evidence gap; preserve available records and investigate alternate data sources.",
+        "evidence": [
+          "IR-E04"
+        ],
+        "next": "Expand event coverage after impact analysis; do not infer absence of access.",
+        "owner": "Investigation Lead",
+        "basis": "Authored simulation; no real incident or participants"
+      },
+      {
+        "id": "I-05",
+        "minute": 50,
+        "title": "Customer and executive questions",
+        "group": "Communicate",
+        "status": "Scripted",
+        "observation": "A fictional customer asks whether data is safe; impact is still uncertain.",
+        "test": "What can be said accurately, by whom, and when is the next update?",
+        "decision": "Communications Lead drafts a fact-limited holding statement; incident commander approves a scheduled update.",
+        "evidence": [
+          "IR-E05"
+        ],
+        "next": "Keep notification decisions with counsel based on actual facts and obligations.",
+        "owner": "Communications Lead",
+        "basis": "Authored simulation; no real incident or participants"
+      },
+      {
+        "id": "I-06",
+        "minute": 70,
+        "title": "Recovery candidate available",
+        "group": "Recover",
+        "status": "Scripted",
+        "observation": "A replacement credential path is prepared in the exercise narrative.",
+        "test": "What technical and business checks are required before declaring recovery?",
+        "decision": "Require access-denial confirmation, a clean deployment, integrity tests and business-owner approval.",
+        "evidence": [
+          "IR-E06"
+        ],
+        "next": "A paper approval is not proof that these checks succeeded.",
+        "owner": "Service Owner",
+        "basis": "Authored simulation; no real incident or participants"
+      },
+      {
+        "id": "I-07",
+        "minute": 90,
+        "title": "Second alert after containment",
+        "group": "Verify",
+        "status": "Scripted",
+        "observation": "A scripted follow-up alert uses an old session identifier.",
+        "test": "Is this residual telemetry or ongoing access?",
+        "decision": "Re-open validation; check event and ingestion times and session revocation behavior before closing.",
+        "evidence": [
+          "IR-E07"
+        ],
+        "next": "Test token lifetime and log delay in an authorized sandbox.",
+        "owner": "SOC Analyst",
+        "basis": "Authored simulation; no real incident or participants"
+      },
+      {
+        "id": "I-08",
+        "minute": 120,
+        "title": "After-action review",
+        "group": "Improve",
+        "status": "Scripted",
+        "observation": "The authored walkthrough ends with incomplete object-level evidence and ambiguous recovery ownership.",
+        "test": "Which actions require an owner, due date and retest before closure?",
+        "decision": "Record three improvement actions; retain findings as open until evidence is reviewed.",
+        "evidence": [
+          "IR-E08"
+        ],
+        "next": "Track logging coverage, session revocation testing and recovery sign-off.",
+        "owner": "Security Lead",
+        "basis": "Authored simulation; no real incident or participants"
+      }
+    ],
+    "sourceIds": [
+      "I1",
+      "I2"
+    ],
+    "steps": [
+      "Detect & analyze",
+      "Contain safely",
+      "Communicate uncertainty",
+      "Recover & improve"
+    ],
+    "intro": "Northstar discovers a potentially exposed developer credential and unusual cloud activity. Over 120 simulated minutes, reviewers balance service continuity, uncertain impact, evidence preservation and accurate communication.",
+    "method": [
+      [
+        "Facilitator setup",
+        "60–90 minute discussion using eight injects on a fictional 120-minute incident clock. Assign commander, analyst, cloud lead, service owner, communications lead and observer. One person may role-play, but record that limitation."
+      ],
+      [
+        "Exercise objectives",
+        "Test ownership, evidence reasoning, containment authorization, impact assessment and recovery acceptance. The objectives are discussion-based; technical revocation or restore requires a separate authorized exercise."
+      ],
+      [
+        "Inject handling",
+        "Release one inject at a time. Record actual participant choices separately from the supplied model decision. Capture timestamps, facts, assumptions, approver and follow-up. Do not silently replace the scripted sample with claimed participant results."
+      ],
+      [
+        "Evaluation",
+        "For each objective record Demonstrated / Partial / Not observed based on participant evidence. No response-speed score or completed-exercise badge is calculated from reading this page."
+      ],
+      [
+        "Standards context",
+        "NIST SP 800-61 Rev. 3 provides the current incident-response reference for this case. Stage labels here organize the original scenario and do not claim to reproduce NIST requirements or legal duties."
+      ]
+    ],
+    "report": [
+      [
+        "Exercise status",
+        "Designed and pre-populated with an authored example walkthrough; not facilitated with real participants. No measured response time, recovered system or notification outcome is claimed."
+      ],
+      [
+        "Example after-action observations",
+        "Ownership is assigned early in the script. The scenario deliberately leaves object-level access uncertain and raises a stale-session question after proposed containment. These are learning prompts, not real observations."
+      ],
+      [
+        "Improvement plan",
+        "IR-A01: Security Lead to define object-level event coverage by 19 November. IR-A02: Cloud Lead to test session-revocation behavior in an authorized sandbox by 22 November. IR-A03: Service Owner to define recovery sign-off and integrity criteria by 20 November. All are proposed and open."
+      ],
+      [
+        "Holding statement — exercise only",
+        "We are investigating unusual cloud access. The affected scope and any customer-data impact are not yet established. Our team is validating containment and preserving records. We will provide the next update at the agreed time. This draft has not been sent."
+      ],
+      [
+        "Closure criteria",
+        "A named reviewer must accept evidence of each improvement. Notification duties require a separate legal and contractual assessment; this exercise sets no universal deadline."
+      ]
+    ],
+    "date": "2026-11-05",
+    "author": "Hassan Ahmed",
+    "sources": [
+      {
+        "id": "I1",
+        "title": "NIST SP 800-61 Rev. 3",
+        "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "note": "April 2025 guidance. Exercise stages below are an original facilitation sequence.",
+        "reviewed": "2026-11-05"
+      },
+      {
+        "id": "I2",
+        "title": "NIST — Incident response preparation resources",
+        "url": "https://csrc.nist.gov/Projects/incident-response/preparation-resources",
+        "note": "Directory includes tabletop and after-action resources; no copied exercise package.",
+        "reviewed": "2026-11-05"
+      }
+    ],
+    "github": "https://github.com/shassanahmed93-rgb/grc-cloud-assurance-project/tree/main/projects/incident-tabletop"
+  },
+  {
+    "slug": "internal-audit",
+    "number": "04",
+    "accent": "#c2b0ff",
+    "label": "INTERNAL AUDIT SIMULATION",
+    "title": "Challenge the conclusion.",
+    "name": "Cloud Controls Mock Internal Audit",
+    "subtitle": "Ten traceable workpapers with criteria, populations, evidence, exceptions and a corrective-action follow-up plan.",
+    "decision": "Limited assurance evidence",
+    "decisionText": "Five failures, three inconclusive procedures and two scoped passes in synthetic fixtures. These results are not an independent audit opinion or an organization-wide compliance score.",
+    "recordLabel": "Audit workpapers",
+    "records": [
+      {
+        "id": "A-01",
+        "title": "Leaver access removal",
+        "group": "Identity",
+        "status": "Fail",
+        "risk": "R-01",
+        "control": "C-01",
+        "population": "5 leavers in October fixture",
+        "sample": "5 of 5",
+        "test": "All terminated identities disabled within 24 hours.",
+        "observation": "One record shows 52 hours; 4 meet the criterion.",
+        "finding": "F-01",
+        "owner": "People Lead",
+        "due": "2026-11-20",
+        "retest": "Reconcile the full next-month population, including active sessions.",
+        "evidence": [
+          "E-A-01"
+        ],
+        "basis": "Synthetic workpaper; not an independent audit",
+        "next": "Implement correction and supply an independently reviewed retest."
+      },
+      {
+        "id": "A-02",
+        "title": "Private object storage",
+        "group": "Data protection",
+        "status": "Pass",
+        "risk": "R-02",
+        "control": "C-02",
+        "population": "3 fixture buckets",
+        "sample": "3 of 3",
+        "test": "All effective public-access flags enabled and encryption described in scoped fixture.",
+        "observation": "All three fixture records meet the stated criterion.",
+        "finding": "None",
+        "owner": "CTO",
+        "due": "2026-12-05",
+        "retest": "Reinspect effective policies after material changes; no history assurance.",
+        "evidence": [
+          "E-A-02"
+        ],
+        "basis": "Synthetic workpaper; not an independent audit",
+        "next": "Retain evidence and review on material change."
+      },
+      {
+        "id": "A-03",
+        "title": "Independent release approval",
+        "group": "Change management",
+        "status": "Fail",
+        "risk": "R-03",
+        "control": "C-03",
+        "population": "3 fixture releases",
+        "sample": "3 of 3",
+        "test": "Every production release has approval by someone other than the author.",
+        "observation": "REL-03 has no independent approval.",
+        "finding": "F-02",
+        "owner": "Engineering Lead",
+        "due": "2026-11-22",
+        "retest": "Inspect enforced rule and attempt a denied unapproved release in a sandbox.",
+        "evidence": [
+          "E-A-03"
+        ],
+        "basis": "Synthetic workpaper; not an independent audit",
+        "next": "Implement correction and supply an independently reviewed retest."
+      },
+      {
+        "id": "A-04",
+        "title": "Recovery operation",
+        "group": "Resilience",
+        "status": "Inconclusive",
+        "risk": "R-04",
+        "control": "C-04",
+        "population": "1 paper recovery scenario",
+        "sample": "1 of 1",
+        "test": "Witnessed technical restore meets four-hour RTO and 24-hour RPO with integrity checks.",
+        "observation": "Only tabletop timings exist; no technical restore record.",
+        "finding": "F-06",
+        "owner": "CTO",
+        "due": "2026-11-27",
+        "retest": "Observe a permitted restore and validate business data consistency.",
+        "evidence": [
+          "E-A-04"
+        ],
+        "basis": "Synthetic workpaper; not an independent audit",
+        "next": "Obtain sufficient evidence before concluding."
+      },
+      {
+        "id": "A-05",
+        "title": "Log query and alert delivery",
+        "group": "Monitoring",
+        "status": "Inconclusive",
+        "risk": "R-05",
+        "control": "C-05",
+        "population": "1 logging configuration fixture",
+        "sample": "1 of 1",
+        "test": "Trace a known event into a query result and delivered alert.",
+        "observation": "Retention setting exists; event query and receipt evidence are missing.",
+        "finding": "F-03",
+        "owner": "Security Lead",
+        "due": "2026-11-15",
+        "retest": "Execute a known-event delivery exercise and retain timestamps.",
+        "evidence": [
+          "E-A-05"
+        ],
+        "basis": "Synthetic workpaper; not an independent audit",
+        "next": "Obtain sufficient evidence before concluding."
+      },
+      {
+        "id": "A-06",
+        "title": "Supplier assurance currency",
+        "group": "Third party",
+        "status": "Fail",
+        "risk": "R-06",
+        "control": "C-06",
+        "population": "1 critical support supplier",
+        "sample": "1 of 1",
+        "test": "Review current assurance coverage and customer responsibilities before approval.",
+        "observation": "Review expired before the assessment cutoff.",
+        "finding": "F-04",
+        "owner": "Procurement Lead",
+        "due": "2026-11-25",
+        "retest": "Inspect current report review and owner decision; existence alone is insufficient.",
+        "evidence": [
+          "E-A-06"
+        ],
+        "basis": "Synthetic workpaper; not an independent audit",
+        "next": "Implement correction and supply an independently reviewed retest."
+      },
+      {
+        "id": "A-07",
+        "title": "Approved AI processing",
+        "group": "Data protection",
+        "status": "Fail",
+        "risk": "R-07",
+        "control": "C-07",
+        "population": "10 fixture support submissions",
+        "sample": "10 of 10",
+        "test": "Customer identifiers appear only in approved processing paths.",
+        "observation": "Two authored examples contain identifiers in an unapproved path.",
+        "finding": "F-05",
+        "owner": "Support Lead",
+        "due": "2026-11-18",
+        "retest": "Inspect configuration and a larger approved sample after corrective action.",
+        "evidence": [
+          "E-A-07"
+        ],
+        "basis": "Synthetic workpaper; not an independent audit",
+        "next": "Implement correction and supply an independently reviewed retest."
+      },
+      {
+        "id": "A-08",
+        "title": "Incident escalation ownership",
+        "group": "Incident handling",
+        "status": "Pass",
+        "risk": "R-08",
+        "control": "C-08",
+        "population": "1 scripted tabletop",
+        "sample": "1 of 1",
+        "test": "Name a commander and record a decision within 30 minutes in the exercise.",
+        "observation": "The synthetic log names the owner at minute 12.",
+        "finding": "None",
+        "owner": "Security Lead",
+        "due": "2026-12-05",
+        "retest": "Repeat with different participants; no production-response conclusion.",
+        "evidence": [
+          "E-A-08"
+        ],
+        "basis": "Synthetic workpaper; not an independent audit",
+        "next": "Retain evidence and review on material change."
+      },
+      {
+        "id": "A-09",
+        "title": "Risk exception authorization",
+        "group": "Governance",
+        "status": "Inconclusive",
+        "risk": "R-01",
+        "control": "C-01",
+        "population": "5 above-appetite risks",
+        "sample": "5 of 5",
+        "test": "An acceptance requires named approval, compensating measures and expiry.",
+        "observation": "No approvals are recorded; no completed approval workflow can be tested.",
+        "finding": "F-07",
+        "owner": "CEO",
+        "due": "2026-11-21",
+        "retest": "Track as pending treatment; inspect an actual approved exception if one occurs.",
+        "evidence": [
+          "E-A-09"
+        ],
+        "basis": "Synthetic workpaper; not an independent audit",
+        "next": "Obtain sufficient evidence before concluding."
+      },
+      {
+        "id": "A-10",
+        "title": "Corrective-action closure",
+        "group": "Governance",
+        "status": "Fail",
+        "risk": "R-03",
+        "control": "C-03",
+        "population": "5 original findings",
+        "sample": "5 of 5",
+        "test": "Each corrective action has a defined retest and closure authority.",
+        "observation": "Original finding log has deadlines but no formal closure-authority field.",
+        "finding": "F-08",
+        "owner": "Security Lead",
+        "due": "2026-11-19",
+        "retest": "Review revised tracker and a completed evidence-based closure example.",
+        "evidence": [
+          "E-A-10"
+        ],
+        "basis": "Synthetic workpaper; not an independent audit",
+        "next": "Implement correction and supply an independently reviewed retest."
+      }
+    ],
+    "sourceIds": [
+      "A1",
+      "A2",
+      "I1"
+    ],
+    "steps": [
+      "Scope & plan",
+      "Inspect the evidence",
+      "Report exceptions",
+      "Retest before closure"
+    ],
+    "intro": "This extends Cloud Assurance Lab into a formal mock audit. It deliberately challenges a paper recovery result: a tabletop timing cannot substantiate a technical restore, so A-04 remains inconclusive.",
+    "method": [
+      [
+        "Mandate & independence",
+        "Portfolio self-assessment of fictional Northstar controls at 5 November 2026. No actual client, assurance engagement or independent auditor. The author designed the scenario and therefore cannot claim independence."
+      ],
+      [
+        "Criteria",
+        "Use original Northstar policy criteria stated in each workpaper. Selected SOC 2 identifiers are contextual references, not a full standards audit. An unmet internal criterion is an exception; no formal ISO major/minor classification is asserted."
+      ],
+      [
+        "Sampling",
+        "For the supplied fixture populations use 100% testing: 5 leavers, 3 buckets, 3 releases, 1 recovery scenario, 1 logging configuration, 1 supplier, 10 AI submissions, 1 tabletop and the complete 5-risk/5-finding lists. These small authored populations are not statistically representative of a real business."
+      ],
+      [
+        "Conclusion discipline",
+        "Pass = supplied evidence meets that specific criterion. Fail = an observed exception. Inconclusive = insufficient evidence. Policy wording alone cannot prove operation. A recovery tabletop does not meet the witnessed-restore criterion."
+      ],
+      [
+        "Severity & follow-up",
+        "High = credible sensitive-data exposure or inability to constrain access. Moderate = material process/evidence weakness. Low = limited documentation issue. These are internal prioritization judgments. Original findings stay open until a distinct retest and closure authorization are recorded."
+      ]
+    ],
+    "report": [
+      [
+        "Audit objective and scope",
+        "Review identity, storage, change, recovery, monitoring, supplier, AI, incident and governance controls. Period is the October fixture set plus the 5 November assessment cutoff. No live systems or staff were examined."
+      ],
+      [
+        "Summary of results",
+        "Of ten procedures, two pass within their limited fixture scope, five fail and three are inconclusive. Do not convert these counts into a compliance percentage."
+      ],
+      [
+        "Material exceptions",
+        "Leaver delay, unauthorized release and unapproved AI use are High-priority fictional findings. Expired supplier review, missing closure authority, insufficient recovery evidence, unproven log delivery and untested exception authorization require follow-up."
+      ],
+      [
+        "Correction to prior interpretation",
+        "Cloud Assurance described a paper recovery scenario as a synthetic pass. This mock audit applies a stronger technical criterion: witnessed restore and integrity evidence. That conclusion is inconclusive. The earlier document is preserved as assessment history."
+      ],
+      [
+        "Management response — proposed",
+        "Named role owners receive proposed deadlines in the action log. No signatures or actual acceptance are invented. All findings remain open; the retest plan identifies the evidence needed for closure."
+      ],
+      [
+        "Follow-up",
+        "Illustrative closure example: a failed release approval control could pass a later sandbox denial test. This example is prospective and never changes A-03 or F-02 until a real permitted retest record exists."
+      ]
+    ],
+    "date": "2026-11-05",
+    "author": "Hassan Ahmed",
+    "sources": [
+      {
+        "id": "A1",
+        "title": "AICPA — 2017 TSC with revised points of focus (2022)",
+        "url": "https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022",
+        "note": "Reference edition for this educational mapping; no complete criteria text reproduced.",
+        "reviewed": "2026-11-05"
+      },
+      {
+        "id": "A2",
+        "title": "AICPA — 2017 TSC, March 2020 edition",
+        "url": "https://assets.ctfassets.net/rb9cdnjh59cm/72xv4p67HVXKp6CjWmjkPk/1cdbfa19f6307e2720396b66a6194dc9/trust-services-criteria-updated-copyright.pdf",
+        "note": "Public AICPA-authored document used to check selected criterion identifiers. Review against the engagement-specific edition before reuse.",
+        "reviewed": "2026-11-05"
+      },
+      {
+        "id": "I1",
+        "title": "NIST SP 800-61 Rev. 3",
+        "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+        "note": "April 2025 guidance. Exercise stages below are an original facilitation sequence.",
+        "reviewed": "2026-11-05"
+      }
+    ],
+    "github": "https://github.com/shassanahmed93-rgb/grc-cloud-assurance-project/tree/main/projects/internal-audit"
+  }
+]

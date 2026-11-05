@@ -1,0 +1,30 @@
+[
+  {
+    "id": "N1",
+    "title": "Notion — Security practices",
+    "url": "https://www.notion.com/security",
+    "note": "Provider-published capabilities; no independent operating evidence reviewed.",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "id": "N2",
+    "title": "Notion — SAML SSO",
+    "url": "https://www.notion.com/help/saml-sso-configuration",
+    "note": "Business/Enterprise feature; workspace configuration and guest access require separate review.",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "id": "N3",
+    "title": "Notion — Audit log",
+    "url": "https://www.notion.com/help/audit-log",
+    "note": "Enterprise feature; availability is not proof of tenant configuration.",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "id": "N4",
+    "title": "Notion — Trust Center",
+    "url": "https://trust.notion.com/",
+    "note": "Public index only. Restricted assurance reports were not obtained.",
+    "reviewed": "2026-11-05"
+  }
+]

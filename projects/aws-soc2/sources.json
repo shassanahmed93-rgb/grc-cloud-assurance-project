@@ -1,0 +1,51 @@
+[
+  {
+    "id": "A1",
+    "title": "AICPA — 2017 TSC with revised points of focus (2022)",
+    "url": "https://www.aicpa-cima.com/resources/download/2017-trust-services-criteria-with-revised-points-of-focus-2022",
+    "note": "Reference edition for this educational mapping; no complete criteria text reproduced.",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "id": "A2",
+    "title": "AICPA — 2017 TSC, March 2020 edition",
+    "url": "https://assets.ctfassets.net/rb9cdnjh59cm/72xv4p67HVXKp6CjWmjkPk/1cdbfa19f6307e2720396b66a6194dc9/trust-services-criteria-updated-copyright.pdf",
+    "note": "Public AICPA-authored document used to check selected criterion identifiers. Review against the engagement-specific edition before reuse.",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "id": "W1",
+    "title": "AWS — IAM security practices",
+    "url": "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html",
+    "note": "Implementation guidance; not evidence that Northstar implemented a control.",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "id": "W2",
+    "title": "AWS — S3 Block Public Access",
+    "url": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html",
+    "note": "Evaluate effective organization/account/bucket/access-point settings together.",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "id": "W3",
+    "title": "AWS — CloudTrail security practices",
+    "url": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/best-practices-security.html",
+    "note": "Trail configuration, event selection and event delivery are distinct evidence questions.",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "id": "W4",
+    "title": "AWS — Backup restore testing",
+    "url": "https://docs.aws.amazon.com/aws-backup/latest/devguide/restore-testing.html",
+    "note": "Restore testing can create billable resources. This project does not run restores.",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "id": "I1",
+    "title": "NIST SP 800-61 Rev. 3",
+    "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "note": "April 2025 guidance. Exercise stages below are an original facilitation sequence.",
+    "reviewed": "2026-11-05"
+  }
+]

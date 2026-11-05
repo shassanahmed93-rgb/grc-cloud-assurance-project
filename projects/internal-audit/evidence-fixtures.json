@@ -1,0 +1,182 @@
+{
+  "E-A-01": {
+    "kind": "synthetic",
+    "period": "October 2026",
+    "leavers": [
+      {
+        "id": "L1",
+        "hours": 4
+      },
+      {
+        "id": "L2",
+        "hours": 8
+      },
+      {
+        "id": "L3",
+        "hours": 52
+      },
+      {
+        "id": "L4",
+        "hours": 12
+      },
+      {
+        "id": "L5",
+        "hours": 3
+      }
+    ]
+  },
+  "E-A-02": {
+    "kind": "synthetic",
+    "snapshot": "2026-11-05T09:00:00Z",
+    "buckets": [
+      {
+        "label": "attachments",
+        "effectivePublicBlock": true,
+        "encryption": true
+      },
+      {
+        "label": "exports",
+        "effectivePublicBlock": true,
+        "encryption": true
+      },
+      {
+        "label": "audit-archive",
+        "effectivePublicBlock": true,
+        "encryption": true
+      }
+    ]
+  },
+  "E-A-03": {
+    "kind": "synthetic",
+    "releases": [
+      {
+        "id": "REL-01",
+        "author": "dev-a",
+        "approver": "reviewer-b"
+      },
+      {
+        "id": "REL-02",
+        "author": "dev-b",
+        "approver": "reviewer-c"
+      },
+      {
+        "id": "REL-03",
+        "author": "dev-c",
+        "approver": null
+      }
+    ]
+  },
+  "E-A-04": {
+    "kind": "synthetic",
+    "evidenceType": "tabletop narrative",
+    "rtoHours": 4,
+    "rpoHours": 24,
+    "paperRestoreMinutes": 192,
+    "paperRecordAgeHours": 9,
+    "technicalExecution": false,
+    "integrityCheck": null
+  },
+  "E-A-05": {
+    "kind": "synthetic",
+    "retentionDays": 365,
+    "knownEvent": null,
+    "queryResult": null,
+    "alertReceipt": null
+  },
+  "E-A-06": {
+    "kind": "synthetic",
+    "supplier": "Fictional SupportCo",
+    "lastReview": "2025-10-01",
+    "reviewDue": "2026-10-01",
+    "assessmentCutoff": "2026-11-05",
+    "currentReportReviewed": false
+  },
+  "E-A-07": {
+    "kind": "synthetic",
+    "submissions": [
+      {
+        "id": "S1",
+        "containsCustomerIdentifier": false,
+        "approvedPath": true
+      },
+      {
+        "id": "S2",
+        "containsCustomerIdentifier": false,
+        "approvedPath": true
+      },
+      {
+        "id": "S3",
+        "containsCustomerIdentifier": false,
+        "approvedPath": true
+      },
+      {
+        "id": "S4",
+        "containsCustomerIdentifier": true,
+        "approvedPath": false
+      },
+      {
+        "id": "S5",
+        "containsCustomerIdentifier": false,
+        "approvedPath": true
+      },
+      {
+        "id": "S6",
+        "containsCustomerIdentifier": false,
+        "approvedPath": true
+      },
+      {
+        "id": "S7",
+        "containsCustomerIdentifier": false,
+        "approvedPath": true
+      },
+      {
+        "id": "S8",
+        "containsCustomerIdentifier": false,
+        "approvedPath": true
+      },
+      {
+        "id": "S9",
+        "containsCustomerIdentifier": true,
+        "approvedPath": false
+      },
+      {
+        "id": "S10",
+        "containsCustomerIdentifier": false,
+        "approvedPath": true
+      }
+    ]
+  },
+  "E-A-08": {
+    "kind": "synthetic",
+    "exercise": "authored escalation fixture",
+    "commanderMinute": 12,
+    "firstDecisionMinute": 12,
+    "actualParticipants": 0
+  },
+  "E-A-09": {
+    "kind": "synthetic",
+    "aboveAppetiteRiskIds": [
+      "R-01",
+      "R-03",
+      "R-05",
+      "R-06",
+      "R-07"
+    ],
+    "approvedExceptions": [],
+    "actualApprovalEvents": 0
+  },
+  "E-A-10": {
+    "kind": "synthetic",
+    "originalFindingIds": [
+      "F-01",
+      "F-02",
+      "F-03",
+      "F-04",
+      "F-05"
+    ],
+    "hasOwners": true,
+    "hasDueDates": true,
+    "hasRetestFields": false,
+    "hasClosureAuthority": false
+  }
+}

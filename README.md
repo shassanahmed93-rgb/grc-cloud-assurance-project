@@ -4,6 +4,19 @@
 
 This portfolio follows a fictional B2B cloud service, Northstar Cloud, from risk identification through control testing, remediation and management review. All records are synthetic. This is a learning project, not a certification, independent audit or claim of professional client delivery.
 
+## New: Evidence-led GRC Assurance Suite
+
+Four recruiter-facing case studies with inspectable workpapers and explicit evidence boundaries:
+
+| Project | Live case study | Source |
+|---|---|---|
+| Third-party risk assessment | [Open](https://shassanahmed.space/projects/vendor-risk/) | [Questionnaire & decision record](projects/vendor-risk/) |
+| AWS–SOC 2 evidence mapping | [Open](https://shassanahmed.space/projects/aws-soc2/) | [Mappings & collection guide](projects/aws-soc2/) |
+| Cloud credential tabletop | [Open](https://shassanahmed.space/projects/incident-tabletop/) | [Facilitator & scenario materials](projects/incident-tabletop/) |
+| Mock internal audit | [Open](https://shassanahmed.space/projects/internal-audit/) | [Workpapers & corrective actions](projects/internal-audit/) |
+
+Read [the suite guide](README-suite.md). Verify with `node suite-tests.mjs` (Node.js; no packages). Public-source vendor research is separated from synthetic scenarios and uncollected live evidence. Developed with AI assistance; no completed real-world audit or cloud test is claimed.
+
 ## Start here
 
 1. Read [the case study](docs/case-study.md) for scope, business decisions and limitations.

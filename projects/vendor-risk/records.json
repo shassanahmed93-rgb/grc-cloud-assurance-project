@@ -1,0 +1,422 @@
+[
+  {
+    "id": "V-01",
+    "group": "Governance",
+    "title": "Is an assurance report advertised?",
+    "status": "Supported",
+    "critical": false,
+    "evidence": [
+      "N4"
+    ],
+    "observation": "The public trust center lists SOC 2 Type II assurance. Its report contents were not reviewed.",
+    "next": "Request the report and confirm its scope, period and exceptions.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Public provider statement",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-02",
+    "group": "Governance",
+    "title": "Has the current assurance report been evaluated?",
+    "status": "Unknown",
+    "critical": true,
+    "evidence": [],
+    "observation": "No restricted report was obtained for this project.",
+    "next": "Record reviewer, period, exclusions and relevant complementary user controls.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-03",
+    "group": "Governance",
+    "title": "Are security responsibilities described publicly?",
+    "status": "Supported",
+    "critical": false,
+    "evidence": [
+      "N1"
+    ],
+    "observation": "A shared-responsibility model is linked publicly.",
+    "next": "Assign each customer responsibility to a Northstar owner.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Public provider statement",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-04",
+    "group": "Governance",
+    "title": "Are independent penetration tests described?",
+    "status": "Supported",
+    "critical": false,
+    "evidence": [
+      "N1"
+    ],
+    "observation": "The provider describes external testing. Results and remediation were not inspected.",
+    "next": "Obtain a permitted summary and review unresolved material issues.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Public provider statement",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-05",
+    "group": "Governance",
+    "title": "Does the contract include audit and escalation rights?",
+    "status": "Unknown",
+    "critical": true,
+    "evidence": [],
+    "observation": "No negotiated contract was supplied.",
+    "next": "Procurement and counsel must review the executed terms.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-06",
+    "group": "Identity",
+    "title": "Is federated SSO available?",
+    "status": "Supported",
+    "critical": false,
+    "evidence": [
+      "N2"
+    ],
+    "observation": "SSO is documented for eligible plans.",
+    "next": "Confirm purchased plan and test enforced authentication.",
+    "owner": "IT Lead",
+    "basis": "Public provider statement",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-07",
+    "group": "Identity",
+    "title": "Is SSO enforced in the proposed workspace?",
+    "status": "Unknown",
+    "critical": true,
+    "evidence": [],
+    "observation": "No workspace configuration or login test exists.",
+    "next": "Test a normal user and an exception path; review emergency access.",
+    "owner": "IT Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-08",
+    "group": "Identity",
+    "title": "Are guest identity exceptions understood?",
+    "status": "Partial",
+    "critical": true,
+    "evidence": [
+      "N2"
+    ],
+    "observation": "SSO documentation distinguishes guest login behavior. Northstar has not assessed guest usage.",
+    "next": "Inventory guests and define allowed content and authentication paths.",
+    "owner": "IT Lead",
+    "basis": "Public description; scope incomplete",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-09",
+    "group": "Identity",
+    "title": "Is automated provisioning described?",
+    "status": "Supported",
+    "critical": false,
+    "evidence": [
+      "N1"
+    ],
+    "observation": "SCIM is advertised among enterprise controls.",
+    "next": "Confirm plan eligibility, configured connector and a leaver test.",
+    "owner": "IT Lead",
+    "basis": "Public provider statement",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-10",
+    "group": "Identity",
+    "title": "Are administrators protected by verified MFA?",
+    "status": "Unknown",
+    "critical": true,
+    "evidence": [],
+    "observation": "No administrator enrollment or enforcement evidence was collected.",
+    "next": "Inspect IdP policy and run an approved authentication test.",
+    "owner": "IT Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-11",
+    "group": "Identity",
+    "title": "Is quarterly access recertification operating?",
+    "status": "Unknown",
+    "critical": false,
+    "evidence": [],
+    "observation": "Northstar supplied no membership review.",
+    "next": "Review full member/guest population and record removals.",
+    "owner": "IT Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-12",
+    "group": "Data protection",
+    "title": "Is transport encryption described?",
+    "status": "Supported",
+    "critical": false,
+    "evidence": [
+      "N1"
+    ],
+    "observation": "The provider publishes transport encryption information.",
+    "next": "Confirm supported client paths and approved integration behavior.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Public provider statement",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-13",
+    "group": "Data protection",
+    "title": "Is encryption at rest described?",
+    "status": "Supported",
+    "critical": false,
+    "evidence": [
+      "N1"
+    ],
+    "observation": "The provider describes encryption at rest.",
+    "next": "Review scope and key responsibilities against the data classification.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Public provider statement",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-14",
+    "group": "Data protection",
+    "title": "Are customer-managed keys suitable for this use case?",
+    "status": "Partial",
+    "critical": false,
+    "evidence": [
+      "N1"
+    ],
+    "observation": "Key-management capability is advertised; applicability has not been evaluated.",
+    "next": "Confirm eligible plan, supported content and operational recovery model.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Public description; scope incomplete",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-15",
+    "group": "Data protection",
+    "title": "Is public sharing disabled for sensitive pages?",
+    "status": "Unknown",
+    "critical": true,
+    "evidence": [],
+    "observation": "No tenant settings or page-sharing inventory supplied.",
+    "next": "Review sharing policy and test a restricted sample page.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-16",
+    "group": "Data protection",
+    "title": "Has export and exit recovery been tested?",
+    "status": "Unknown",
+    "critical": false,
+    "evidence": [],
+    "observation": "No Northstar export or migration exercise supplied.",
+    "next": "Export synthetic content and verify formats, attachments and permissions.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-17",
+    "group": "Monitoring",
+    "title": "Is security audit logging available?",
+    "status": "Supported",
+    "critical": false,
+    "evidence": [
+      "N3"
+    ],
+    "observation": "Audit logs are documented for Enterprise owners.",
+    "next": "Confirm eligibility and the selected workspace event scope.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Public provider statement",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-18",
+    "group": "Monitoring",
+    "title": "Is audit-log retention documented?",
+    "status": "Supported",
+    "critical": false,
+    "evidence": [
+      "N3"
+    ],
+    "observation": "Documentation states history is retained for up to 365 days.",
+    "next": "Map required retention to an approved collection and archive process.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Public provider statement",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-19",
+    "group": "Monitoring",
+    "title": "Can audit events be exported?",
+    "status": "Supported",
+    "critical": false,
+    "evidence": [
+      "N3"
+    ],
+    "observation": "CSV export is described.",
+    "next": "Exercise an export using a synthetic event and validate completeness.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Public provider statement",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-20",
+    "group": "Monitoring",
+    "title": "Has alert delivery been demonstrated?",
+    "status": "Unknown",
+    "critical": true,
+    "evidence": [],
+    "observation": "No monitoring rule or alert delivery test was provided.",
+    "next": "Generate an approved synthetic event and record detection and receipt.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-21",
+    "group": "Privacy",
+    "title": "Are privacy and processing terms discoverable?",
+    "status": "Supported",
+    "critical": false,
+    "evidence": [
+      "N4"
+    ],
+    "observation": "The trust center links privacy and processing documents. No legal suitability conclusion is made.",
+    "next": "Counsel must review the applicable executed agreement.",
+    "owner": "Privacy Lead",
+    "basis": "Public provider statement",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-22",
+    "group": "Privacy",
+    "title": "Is a subprocessor list discoverable?",
+    "status": "Supported",
+    "critical": false,
+    "evidence": [
+      "N4"
+    ],
+    "observation": "A subprocessor list is linked publicly.",
+    "next": "Evaluate the relevant processing paths and change-notice mechanism.",
+    "owner": "Privacy Lead",
+    "basis": "Public provider statement",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-23",
+    "group": "Privacy",
+    "title": "Is the required processing location contractually confirmed?",
+    "status": "Unknown",
+    "critical": true,
+    "evidence": [],
+    "observation": "No Northstar residency commitment was supplied.",
+    "next": "Validate scope, exceptions and contractual requirements for the intended content.",
+    "owner": "Privacy Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-24",
+    "group": "Privacy",
+    "title": "Is deletion completion evidenced for the intended data?",
+    "status": "Unknown",
+    "critical": true,
+    "evidence": [],
+    "observation": "No request, retention configuration or deletion confirmation supplied.",
+    "next": "Test deletion with synthetic content and review backup retention exceptions.",
+    "owner": "Privacy Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-25",
+    "group": "Privacy",
+    "title": "Are AI processing terms and configuration approved?",
+    "status": "Unknown",
+    "critical": true,
+    "evidence": [],
+    "observation": "No approved AI data-flow assessment or tenant settings supplied.",
+    "next": "Keep AI use with customer data out of scope pending separate review.",
+    "owner": "Privacy Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-26",
+    "group": "Resilience",
+    "title": "Are customer-specific RTO/RPO commitments established?",
+    "status": "Unknown",
+    "critical": true,
+    "evidence": [],
+    "observation": "No executed recovery commitment was evaluated.",
+    "next": "Agree recovery needs with the business; obtain service-specific commitments.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-27",
+    "group": "Resilience",
+    "title": "Is a customer recovery exercise completed?",
+    "status": "Unknown",
+    "critical": false,
+    "evidence": [],
+    "observation": "No restore or exit exercise was performed.",
+    "next": "Run an approved tabletop followed by technical validation where feasible.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-28",
+    "group": "Incident response",
+    "title": "Is incident response capability described?",
+    "status": "Supported",
+    "critical": false,
+    "evidence": [
+      "N1"
+    ],
+    "observation": "The provider describes an incident-response function.",
+    "next": "Review escalation paths for Northstar without assuming contractual notice timing.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Public provider statement",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-29",
+    "group": "Incident response",
+    "title": "Is breach notification timing contractually agreed?",
+    "status": "Unknown",
+    "critical": true,
+    "evidence": [],
+    "observation": "No executed notification clause was reviewed.",
+    "next": "Counsel and the business owner must approve duties and escalation contacts.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  },
+  {
+    "id": "V-30",
+    "group": "Incident response",
+    "title": "Has the supplier contact route been exercised?",
+    "status": "Unknown",
+    "critical": false,
+    "evidence": [],
+    "observation": "No joint contact drill took place.",
+    "next": "Conduct a non-production contact-validation exercise with authorization.",
+    "owner": "Vendor Risk Lead",
+    "basis": "Not obtained",
+    "test": "Compare the published statement with the proposed use case; obtain tenant or contractual evidence before asserting effectiveness."
+  }
+]

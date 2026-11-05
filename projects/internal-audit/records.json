@@ -1,0 +1,212 @@
+[
+  {
+    "id": "A-01",
+    "title": "Leaver access removal",
+    "group": "Identity",
+    "status": "Fail",
+    "risk": "R-01",
+    "control": "C-01",
+    "population": "5 leavers in October fixture",
+    "sample": "5 of 5",
+    "test": "All terminated identities disabled within 24 hours.",
+    "observation": "One record shows 52 hours; 4 meet the criterion.",
+    "finding": "F-01",
+    "owner": "People Lead",
+    "due": "2026-11-20",
+    "retest": "Reconcile the full next-month population, including active sessions.",
+    "evidence": [
+      "E-A-01"
+    ],
+    "basis": "Synthetic workpaper; not an independent audit",
+    "next": "Implement correction and supply an independently reviewed retest."
+  },
+  {
+    "id": "A-02",
+    "title": "Private object storage",
+    "group": "Data protection",
+    "status": "Pass",
+    "risk": "R-02",
+    "control": "C-02",
+    "population": "3 fixture buckets",
+    "sample": "3 of 3",
+    "test": "All effective public-access flags enabled and encryption described in scoped fixture.",
+    "observation": "All three fixture records meet the stated criterion.",
+    "finding": "None",
+    "owner": "CTO",
+    "due": "2026-12-05",
+    "retest": "Reinspect effective policies after material changes; no history assurance.",
+    "evidence": [
+      "E-A-02"
+    ],
+    "basis": "Synthetic workpaper; not an independent audit",
+    "next": "Retain evidence and review on material change."
+  },
+  {
+    "id": "A-03",
+    "title": "Independent release approval",
+    "group": "Change management",
+    "status": "Fail",
+    "risk": "R-03",
+    "control": "C-03",
+    "population": "3 fixture releases",
+    "sample": "3 of 3",
+    "test": "Every production release has approval by someone other than the author.",
+    "observation": "REL-03 has no independent approval.",
+    "finding": "F-02",
+    "owner": "Engineering Lead",
+    "due": "2026-11-22",
+    "retest": "Inspect enforced rule and attempt a denied unapproved release in a sandbox.",
+    "evidence": [
+      "E-A-03"
+    ],
+    "basis": "Synthetic workpaper; not an independent audit",
+    "next": "Implement correction and supply an independently reviewed retest."
+  },
+  {
+    "id": "A-04",
+    "title": "Recovery operation",
+    "group": "Resilience",
+    "status": "Inconclusive",
+    "risk": "R-04",
+    "control": "C-04",
+    "population": "1 paper recovery scenario",
+    "sample": "1 of 1",
+    "test": "Witnessed technical restore meets four-hour RTO and 24-hour RPO with integrity checks.",
+    "observation": "Only tabletop timings exist; no technical restore record.",
+    "finding": "F-06",
+    "owner": "CTO",
+    "due": "2026-11-27",
+    "retest": "Observe a permitted restore and validate business data consistency.",
+    "evidence": [
+      "E-A-04"
+    ],
+    "basis": "Synthetic workpaper; not an independent audit",
+    "next": "Obtain sufficient evidence before concluding."
+  },
+  {
+    "id": "A-05",
+    "title": "Log query and alert delivery",
+    "group": "Monitoring",
+    "status": "Inconclusive",
+    "risk": "R-05",
+    "control": "C-05",
+    "population": "1 logging configuration fixture",
+    "sample": "1 of 1",
+    "test": "Trace a known event into a query result and delivered alert.",
+    "observation": "Retention setting exists; event query and receipt evidence are missing.",
+    "finding": "F-03",
+    "owner": "Security Lead",
+    "due": "2026-11-15",
+    "retest": "Execute a known-event delivery exercise and retain timestamps.",
+    "evidence": [
+      "E-A-05"
+    ],
+    "basis": "Synthetic workpaper; not an independent audit",
+    "next": "Obtain sufficient evidence before concluding."
+  },
+  {
+    "id": "A-06",
+    "title": "Supplier assurance currency",
+    "group": "Third party",
+    "status": "Fail",
+    "risk": "R-06",
+    "control": "C-06",
+    "population": "1 critical support supplier",
+    "sample": "1 of 1",
+    "test": "Review current assurance coverage and customer responsibilities before approval.",
+    "observation": "Review expired before the assessment cutoff.",
+    "finding": "F-04",
+    "owner": "Procurement Lead",
+    "due": "2026-11-25",
+    "retest": "Inspect current report review and owner decision; existence alone is insufficient.",
+    "evidence": [
+      "E-A-06"
+    ],
+    "basis": "Synthetic workpaper; not an independent audit",
+    "next": "Implement correction and supply an independently reviewed retest."
+  },
+  {
+    "id": "A-07",
+    "title": "Approved AI processing",
+    "group": "Data protection",
+    "status": "Fail",
+    "risk": "R-07",
+    "control": "C-07",
+    "population": "10 fixture support submissions",
+    "sample": "10 of 10",
+    "test": "Customer identifiers appear only in approved processing paths.",
+    "observation": "Two authored examples contain identifiers in an unapproved path.",
+    "finding": "F-05",
+    "owner": "Support Lead",
+    "due": "2026-11-18",
+    "retest": "Inspect configuration and a larger approved sample after corrective action.",
+    "evidence": [
+      "E-A-07"
+    ],
+    "basis": "Synthetic workpaper; not an independent audit",
+    "next": "Implement correction and supply an independently reviewed retest."
+  },
+  {
+    "id": "A-08",
+    "title": "Incident escalation ownership",
+    "group": "Incident handling",
+    "status": "Pass",
+    "risk": "R-08",
+    "control": "C-08",
+    "population": "1 scripted tabletop",
+    "sample": "1 of 1",
+    "test": "Name a commander and record a decision within 30 minutes in the exercise.",
+    "observation": "The synthetic log names the owner at minute 12.",
+    "finding": "None",
+    "owner": "Security Lead",
+    "due": "2026-12-05",
+    "retest": "Repeat with different participants; no production-response conclusion.",
+    "evidence": [
+      "E-A-08"
+    ],
+    "basis": "Synthetic workpaper; not an independent audit",
+    "next": "Retain evidence and review on material change."
+  },
+  {
+    "id": "A-09",
+    "title": "Risk exception authorization",
+    "group": "Governance",
+    "status": "Inconclusive",
+    "risk": "R-01",
+    "control": "C-01",
+    "population": "5 above-appetite risks",
+    "sample": "5 of 5",
+    "test": "An acceptance requires named approval, compensating measures and expiry.",
+    "observation": "No approvals are recorded; no completed approval workflow can be tested.",
+    "finding": "F-07",
+    "owner": "CEO",
+    "due": "2026-11-21",
+    "retest": "Track as pending treatment; inspect an actual approved exception if one occurs.",
+    "evidence": [
+      "E-A-09"
+    ],
+    "basis": "Synthetic workpaper; not an independent audit",
+    "next": "Obtain sufficient evidence before concluding."
+  },
+  {
+    "id": "A-10",
+    "title": "Corrective-action closure",
+    "group": "Governance",
+    "status": "Fail",
+    "risk": "R-03",
+    "control": "C-03",
+    "population": "5 original findings",
+    "sample": "5 of 5",
+    "test": "Each corrective action has a defined retest and closure authority.",
+    "observation": "Original finding log has deadlines but no formal closure-authority field.",
+    "finding": "F-08",
+    "owner": "Security Lead",
+    "due": "2026-11-19",
+    "retest": "Review revised tracker and a completed evidence-based closure example.",
+    "evidence": [
+      "E-A-10"
+    ],
+    "basis": "Synthetic workpaper; not an independent audit",
+    "next": "Implement correction and supply an independently reviewed retest."
+  }
+]

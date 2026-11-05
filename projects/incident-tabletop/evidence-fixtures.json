@@ -1,0 +1,74 @@
+{
+  "IR-E01": {
+    "kind": "scripted exercise fixture",
+    "inject": "I-01",
+    "scenarioMinute": 0,
+    "assumedFacts": "At 09:00 UTC a simulated alert shows an unfamiliar region and a developer session.",
+    "modelDecision": "On-call analyst compares identity, location context and approved work; preserve the original alert.",
+    "actualParticipants": 0,
+    "source": "Authored by Hassan Ahmed with AI assistance; no real incident"
+  },
+  "IR-E02": {
+    "kind": "scripted exercise fixture",
+    "inject": "I-02",
+    "scenarioMinute": 10,
+    "assumedFacts": "A synthetic repository review finds an exposed credential reference. No actual secret is included.",
+    "modelDecision": "Security Lead declares a simulated high-severity incident and assigns cloud and communications leads.",
+    "actualParticipants": 0,
+    "source": "Authored by Hassan Ahmed with AI assistance; no real incident"
+  },
+  "IR-E03": {
+    "kind": "scripted exercise fixture",
+    "inject": "I-03",
+    "scenarioMinute": 20,
+    "assumedFacts": "The credential is linked to a job that supports an important customer workflow.",
+    "modelDecision": "Cloud lead proposes revocation and a controlled replacement path; incident commander approves sequencing.",
+    "actualParticipants": 0,
+    "source": "Authored by Hassan Ahmed with AI assistance; no real incident"
+  },
+  "IR-E04": {
+    "kind": "scripted exercise fixture",
+    "inject": "I-04",
+    "scenarioMinute": 35,
+    "assumedFacts": "Management logs exist, but the sample contains no object-level reads for the affected period.",
+    "modelDecision": "No. Record an evidence gap; preserve available records and investigate alternate data sources.",
+    "actualParticipants": 0,
+    "source": "Authored by Hassan Ahmed with AI assistance; no real incident"
+  },
+  "IR-E05": {
+    "kind": "scripted exercise fixture",
+    "inject": "I-05",
+    "scenarioMinute": 50,
+    "assumedFacts": "A fictional customer asks whether data is safe; impact is still uncertain.",
+    "modelDecision": "Communications Lead drafts a fact-limited holding statement; incident commander approves a scheduled update.",
+    "actualParticipants": 0,
+    "source": "Authored by Hassan Ahmed with AI assistance; no real incident"
+  },
+  "IR-E06": {
+    "kind": "scripted exercise fixture",
+    "inject": "I-06",
+    "scenarioMinute": 70,
+    "assumedFacts": "A replacement credential path is prepared in the exercise narrative.",
+    "modelDecision": "Require access-denial confirmation, a clean deployment, integrity tests and business-owner approval.",
+    "actualParticipants": 0,
+    "source": "Authored by Hassan Ahmed with AI assistance; no real incident"
+  },
+  "IR-E07": {
+    "kind": "scripted exercise fixture",
+    "inject": "I-07",
+    "scenarioMinute": 90,
+    "assumedFacts": "A scripted follow-up alert uses an old session identifier.",
+    "modelDecision": "Re-open validation; check event and ingestion times and session revocation behavior before closing.",
+    "actualParticipants": 0,
+    "source": "Authored by Hassan Ahmed with AI assistance; no real incident"
+  },
+  "IR-E08": {
+    "kind": "scripted exercise fixture",
+    "inject": "I-08",
+    "scenarioMinute": 120,
+    "assumedFacts": "The authored walkthrough ends with incomplete object-level evidence and ambiguous recovery ownership.",
+    "modelDecision": "Record three improvement actions; retain findings as open until evidence is reviewed.",
+    "actualParticipants": 0,
+    "source": "Authored by Hassan Ahmed with AI assistance; no real incident"
+  }
+}

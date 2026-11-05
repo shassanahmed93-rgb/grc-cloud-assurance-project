@@ -1,0 +1,202 @@
+[
+  {
+    "id": "C-01",
+    "group": "Identity",
+    "title": "Federated workforce identity",
+    "status": "Not collected",
+    "criterion": "CC6.1",
+    "fixture": "Identity policy requires temporary sessions.",
+    "test": "Inspect IdP enforcement and AWS assignment exports; test allowed and denied logins.",
+    "evidence": [
+      "W1",
+      "A2"
+    ],
+    "observation": "A written policy cannot establish enforcement or complete population coverage.",
+    "next": "Collect signed-off identity inventory and time-stamped configuration.",
+    "owner": "Cloud Platform Lead",
+    "basis": "Collection plan + synthetic example only"
+  },
+  {
+    "id": "C-02",
+    "group": "Identity",
+    "title": "Joiner and leaver lifecycle",
+    "status": "Not collected",
+    "criterion": "CC6.2",
+    "fixture": "One of five synthetic leavers exceeded 24 hours.",
+    "test": "Reconcile the complete HR leaver population with disablement and token revocation records.",
+    "evidence": [
+      "W1",
+      "A2"
+    ],
+    "observation": "HR completeness and session lifetime are unverified.",
+    "next": "Reconcile all leavers and investigate each timing exception.",
+    "owner": "Cloud Platform Lead",
+    "basis": "Collection plan + synthetic example only"
+  },
+  {
+    "id": "C-03",
+    "group": "Identity",
+    "title": "Privileged role review",
+    "status": "Not collected",
+    "criterion": "CC6.3",
+    "fixture": "Two privileged roles have documented owners.",
+    "test": "Compare role policies, membership and business approvals; examine overbroad privileges.",
+    "evidence": [
+      "W1",
+      "A2"
+    ],
+    "observation": "Role existence is not proof that effective permission is appropriate.",
+    "next": "Inspect resource policies, boundaries and approved entitlements together.",
+    "owner": "Cloud Platform Lead",
+    "basis": "Collection plan + synthetic example only"
+  },
+  {
+    "id": "C-04",
+    "group": "Perimeter",
+    "title": "Network and storage exposure",
+    "status": "Not collected",
+    "criterion": "CC6.6",
+    "fixture": "Account public-access flags are enabled in a synthetic snapshot.",
+    "test": "Inspect effective account/bucket/access-point policy plus security-group ingress and approved exposure.",
+    "evidence": [
+      "W2",
+      "A2"
+    ],
+    "observation": "One snapshot cannot prove historical protection or absence of unintended private access.",
+    "next": "Collect effective policy and scoped negative-access test results.",
+    "owner": "Cloud Platform Lead",
+    "basis": "Collection plan + synthetic example only"
+  },
+  {
+    "id": "C-05",
+    "group": "Data protection",
+    "title": "Protected data transmission",
+    "status": "Not collected",
+    "criterion": "CC6.7",
+    "fixture": "TLS is required by an example application policy.",
+    "test": "Review listener and client settings; test approved endpoints without sending sensitive data.",
+    "evidence": [
+      "A2"
+    ],
+    "observation": "Encryption configuration alone does not address every data transfer path.",
+    "next": "Inventory API, database and third-party transfer paths.",
+    "owner": "Cloud Platform Lead",
+    "basis": "Collection plan + synthetic example only"
+  },
+  {
+    "id": "C-06",
+    "group": "Monitoring",
+    "title": "Configuration and vulnerability review",
+    "status": "Not collected",
+    "criterion": "CC7.1",
+    "fixture": "Example configuration gap: an unowned security-group exception.",
+    "test": "Compare a time-stamped inventory to the baseline and review vulnerability triage records.",
+    "evidence": [
+      "A2"
+    ],
+    "observation": "No actual scan or AWS Config results were collected.",
+    "next": "Collect scoped findings and approved exception decisions.",
+    "owner": "Cloud Platform Lead",
+    "basis": "Collection plan + synthetic example only"
+  },
+  {
+    "id": "C-07",
+    "group": "Monitoring",
+    "title": "Security event monitoring",
+    "status": "Not collected",
+    "criterion": "CC7.2",
+    "fixture": "Trail is configured; alert receipt evidence is absent.",
+    "test": "Review trail scope/status/selectors and a known event from creation through delivery to triage.",
+    "evidence": [
+      "W3",
+      "A2"
+    ],
+    "observation": "Enabled integrity validation is not the same as executing validation; management events do not cover all data events.",
+    "next": "Collect event selectors, a delivery sample and a timed detection test.",
+    "owner": "Cloud Platform Lead",
+    "basis": "Collection plan + synthetic example only"
+  },
+  {
+    "id": "C-08",
+    "group": "Incident handling",
+    "title": "Security-event evaluation",
+    "status": "Not collected",
+    "criterion": "CC7.3",
+    "fixture": "An example event is triaged with impact marked uncertain.",
+    "test": "Inspect event classification, impacted assets, decision owner and escalation rationale.",
+    "evidence": [
+      "A2",
+      "I1"
+    ],
+    "observation": "A ticket template does not establish consistent triage operation.",
+    "next": "Sample real permitted tickets for the defined review period.",
+    "owner": "Cloud Platform Lead",
+    "basis": "Collection plan + synthetic example only"
+  },
+  {
+    "id": "C-09",
+    "group": "Incident handling",
+    "title": "Coordinated incident response",
+    "status": "Not collected",
+    "criterion": "CC7.4",
+    "fixture": "Tabletop decision log assigns an incident commander.",
+    "test": "Review plan roles and a completed exercise with containment and communication decisions.",
+    "evidence": [
+      "A2",
+      "I1"
+    ],
+    "observation": "A tabletop cannot prove technical containment in production.",
+    "next": "Conduct an authorized exercise and track improvement actions.",
+    "owner": "Cloud Platform Lead",
+    "basis": "Collection plan + synthetic example only"
+  },
+  {
+    "id": "C-10",
+    "group": "Change management",
+    "title": "Production change authorization",
+    "status": "Not collected",
+    "criterion": "CC8.1",
+    "fixture": "One of three synthetic releases lacks independent approval.",
+    "test": "Reconcile deployment population with approvals, test results, immutable artifacts and emergency reviews.",
+    "evidence": [
+      "A2"
+    ],
+    "observation": "A CI success badge does not demonstrate authorization or full population completeness.",
+    "next": "Collect approval rules and complete deployment samples.",
+    "owner": "Cloud Platform Lead",
+    "basis": "Collection plan + synthetic example only"
+  },
+  {
+    "id": "C-11",
+    "group": "Resilience",
+    "title": "Business disruption mitigation",
+    "status": "Not collected",
+    "criterion": "CC9.1",
+    "fixture": "A paper restore scenario meets proposed objectives.",
+    "test": "Review recovery dependencies and witnessed restore results against business-approved RTO/RPO.",
+    "evidence": [
+      "W4",
+      "A2"
+    ],
+    "observation": "No restore was executed; service recovery must include application integrity checks.",
+    "next": "Obtain an approved recovery test and record actual timings.",
+    "owner": "Cloud Platform Lead",
+    "basis": "Collection plan + synthetic example only"
+  },
+  {
+    "id": "C-12",
+    "group": "Governance",
+    "title": "Supplier-risk governance",
+    "status": "Not collected",
+    "criterion": "CC9.2",
+    "fixture": "A supplier assurance report is not yet reviewed.",
+    "test": "Inspect assessment, contract, relevant assurance exceptions and approval decision.",
+    "evidence": [
+      "A2"
+    ],
+    "observation": "Provider certification does not cover Northstar tenant operation.",
+    "next": "Complete the linked vendor review and resolve critical unknowns.",
+    "owner": "Security Lead",
+    "basis": "Collection plan + synthetic example only"
+  }
+]

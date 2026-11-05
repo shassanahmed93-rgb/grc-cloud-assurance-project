@@ -1,0 +1,16 @@
+[
+  {
+    "id": "I1",
+    "title": "NIST SP 800-61 Rev. 3",
+    "url": "https://csrc.nist.gov/pubs/sp/800/61/r3/final",
+    "note": "April 2025 guidance. Exercise stages below are an original facilitation sequence.",
+    "reviewed": "2026-11-05"
+  },
+  {
+    "id": "I2",
+    "title": "NIST — Incident response preparation resources",
+    "url": "https://csrc.nist.gov/Projects/incident-response/preparation-resources",
+    "note": "Directory includes tabletop and after-action resources; no copied exercise package.",
+    "reviewed": "2026-11-05"
+  }
+]

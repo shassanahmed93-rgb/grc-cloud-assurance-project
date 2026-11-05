@@ -1,0 +1,86 @@
+{
+  "SYN-C-01": {
+    "kind": "synthetic",
+    "liveEvidence": false,
+    "control": "C-01",
+    "example": "Identity policy requires temporary sessions.",
+    "scope": "Fictional Northstar design; no account identifiers or collected cloud outputs"
+  },
+  "SYN-C-02": {
+    "kind": "synthetic",
+    "liveEvidence": false,
+    "control": "C-02",
+    "example": "One of five synthetic leavers exceeded 24 hours.",
+    "scope": "Fictional Northstar design; no account identifiers or collected cloud outputs"
+  },
+  "SYN-C-03": {
+    "kind": "synthetic",
+    "liveEvidence": false,
+    "control": "C-03",
+    "example": "Two privileged roles have documented owners.",
+    "scope": "Fictional Northstar design; no account identifiers or collected cloud outputs"
+  },
+  "SYN-C-04": {
+    "kind": "synthetic",
+    "liveEvidence": false,
+    "control": "C-04",
+    "example": "Account public-access flags are enabled in a synthetic snapshot.",
+    "scope": "Fictional Northstar design; no account identifiers or collected cloud outputs"
+  },
+  "SYN-C-05": {
+    "kind": "synthetic",
+    "liveEvidence": false,
+    "control": "C-05",
+    "example": "TLS is required by an example application policy.",
+    "scope": "Fictional Northstar design; no account identifiers or collected cloud outputs"
+  },
+  "SYN-C-06": {
+    "kind": "synthetic",
+    "liveEvidence": false,
+    "control": "C-06",
+    "example": "Example configuration gap: an unowned security-group exception.",
+    "scope": "Fictional Northstar design; no account identifiers or collected cloud outputs"
+  },
+  "SYN-C-07": {
+    "kind": "synthetic",
+    "liveEvidence": false,
+    "control": "C-07",
+    "example": "Trail is configured; alert receipt evidence is absent.",
+    "scope": "Fictional Northstar design; no account identifiers or collected cloud outputs"
+  },
+  "SYN-C-08": {
+    "kind": "synthetic",
+    "liveEvidence": false,
+    "control": "C-08",
+    "example": "An example event is triaged with impact marked uncertain.",
+    "scope": "Fictional Northstar design; no account identifiers or collected cloud outputs"
+  },
+  "SYN-C-09": {
+    "kind": "synthetic",
+    "liveEvidence": false,
+    "control": "C-09",
+    "example": "Tabletop decision log assigns an incident commander.",
+    "scope": "Fictional Northstar design; no account identifiers or collected cloud outputs"
+  },
+  "SYN-C-10": {
+    "kind": "synthetic",
+    "liveEvidence": false,
+    "control": "C-10",
+    "example": "One of three synthetic releases lacks independent approval.",
+    "scope": "Fictional Northstar design; no account identifiers or collected cloud outputs"
+  },
+  "SYN-C-11": {
+    "kind": "synthetic",
+    "liveEvidence": false,
+    "control": "C-11",
+    "example": "A paper restore scenario meets proposed objectives.",
+    "scope": "Fictional Northstar design; no account identifiers or collected cloud outputs"
+  },
+  "SYN-C-12": {
+    "kind": "synthetic",
+    "liveEvidence": false,
+    "control": "C-12",
+    "example": "A supplier assurance report is not yet reviewed.",
+    "scope": "Fictional Northstar design; no account identifiers or collected cloud outputs"
+  }
+}
